@@ -6,4 +6,4 @@ async function loadLayout(elementId, file) {
 }
 
 loadLayout("navbar", "layouts/navbar.html");
-//loadLayout("footer", "layouts/footer.html");
+loadLayout("footer", "layouts/footer.html");
