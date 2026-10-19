@@ -27,7 +27,7 @@
     <div class="container">
 
         <a class="navbar-brand" href="index.html">
-            name
+            Toni Hernández
         </a>
         <button
                 class="navbar-toggler"
@@ -49,9 +49,218 @@
 </header>
 
 
+
 <main>
+    <section class="hero container py-5 py-lg-6">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-9 col-xl-8">
+
+                <p class="text-body-secondary mb-2">
+                    Desarrollo de software · DAM
+                </p>
+
+                <h1 class="display-5 fw-bold mb-3">
+                    Hola, soy
+                    <span class="d-block">Toni Hernández</span>
+                </h1>
+
+                <h2 class="h3 fw-semibold mb-4">
+                    Software Developer
+                </h2>
+
+                <p class="lead mb-4">
+                    Desarrollo <strong>aplicaciones web y API REST con Java y Spring Boot</strong>,
+                    aplicaciones móviles Android con tecnologías modernas como
+                    <strong>Kotlin y Jetpack Compose</strong>, y soluciones de escritorio con
+                    <strong>.NET</strong>.
+                </p>
+
+                <p class="lead mb-4">
+                    Trabajo con <strong>API REST</strong>, integración entre aplicaciones y bases
+                    de datos como <strong>MySQL y MongoDB</strong>, buscando construir software
+                    <strong>bien estructurado, mantenible y preparado para evolucionar</strong>.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#proyectos"
+                       class="btn btn-primary">
+                        Ver proyectos
+                    </a>
+
+                    <a href="#contacto"
+                       class="btn btn-outline-secondary">
+                        Contactar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container py-5">
+        <h2 class="text-center mb-5">Proyectos destacados</h2>
+
+        <div id="carouselExampleDark" class="carousel slide">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Proyecto 1">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="1"
+                        aria-label="Proyecto 2">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="2"
+                        aria-label="Proyecto 3">
+                </button>
+            </div>
+
+            <!-- Proyectos -->
+            <div class="carousel-inner">
+
+                <!-- Proyecto 1 -->
+                <div class="carousel-item active">
+                    <div class="project-card card mx-auto mb-5">
+
+                        <img src="img/projectshop.png"
+                             class="card-img-top project-image"
+                             alt="ProjectShop">
+
+                        <div class="card-body">
+                            <h5 class="card-title">ProjectShop</h5>
+
+                            <p class="card-text">
+                                Aplicación web de comercio electrónico
+                                desarrollada con Java y Spring Boot.
+                            </p>
+
+                            <div class="project-tags mb-3">
+                                <span class="badge text-bg-primary">Java</span>
+                                <span class="badge text-bg-secondary">Spring Boot</span>
+                                <span class="badge text-bg-secondary">MySQL</span>
+                                <span class="badge text-bg-secondary">Thymeleaf</span>
+                            </div>
+
+                            <a href="https://github.com/"
+                               class="btn btn-outline-primary"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="carousel-item">
+                    <div class="project-card card mx-auto mb-5">
+
+                        <img src="img/proyecto2.png"
+                             class="card-img-top project-image"
+                             alt="Proyecto 2">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+
+                            <p class="card-text">
+                                Descripción de tu segundo proyecto.
+                            </p>
+
+                            <div class="project-tags mb-3">
+                                <span class="badge text-bg-primary">Java</span>
+                                <span class="badge text-bg-secondary">Spring Boot</span>
+                            </div>
+
+                            <a href="https://github.com/"
+                               class="btn btn-outline-primary"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="carousel-item">
+                    <div class="project-card card mx-auto mb-5">
+
+                        <img src="img/proyecto3.png"
+                             class="card-img-top project-image"
+                             alt="Proyecto 3">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+
+                            <p class="card-text">
+                                Descripción de tu tercer proyecto.
+                            </p>
+
+                            <div class="project-tags mb-3">
+                                <span class="badge text-bg-primary">Kotlin</span>
+                                <span class="badge text-bg-secondary">Android</span>
+                            </div>
+
+                            <a href="https://github.com/"
+                               class="btn btn-outline-primary"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botón anterior -->
+            <button class="carousel-control-prev project-carousel-control"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                    aria-label="Proyecto anterior">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </span>
+            </button>
+
+            <!-- Botón siguiente -->
+            <button class="carousel-control-next project-carousel-control"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                    aria-label="Proyecto siguiente">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+            </button>
+
+        </div>
+    </section>
+
+
 
 </main>
+
 
 
 

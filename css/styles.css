@@ -1,5 +1,168 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
+
+/* =========================
+   TARJETAS DE PROYECTOS
+   ========================= */
+
+.project-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    border: 1px solid var(--bs-border-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    padding: 1.5rem;
+}
+
+.project-card .card-title {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+    color: var(--bs-secondary-color);
+    min-height: 3rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+
+/* =========================
+   CARRUSEL
+   ========================= */
+
+#carouselExampleDark {
+    padding-bottom: 2rem;
+}
+
+/* Indicadores inferiores */
+
+#carouselExampleDark .carousel-indicators {
+    bottom: -0.5rem;
+}
+
+#carouselExampleDark .carousel-indicators [data-bs-target] {
+    background-color: var(--bs-emphasis-color);
+    opacity: 0.35;
+}
+
+#carouselExampleDark .carousel-indicators .active {
+    opacity: 1;
+}
+
+
+/* =========================
+   BOTONES DE NAVEGACIÓN
+   ========================= */
+
+#carouselExampleDark .project-carousel-control {
+    width: 3rem;
+    opacity: 1;
+}
+
+/* Posición de los botones */
+
+#carouselExampleDark .carousel-control-prev {
+    left: 20%;
+}
+
+#carouselExampleDark .carousel-control-next {
+    right: 20%;
+}
+
+/* Botón azul circular */
+
+.project-carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.75rem;
+    height: 2.75rem;
+
+    color: #fff;
+    background-color: #0d6efd;
+    border-radius: 50%;
+
+    font-size: 1.25rem;
+
+    box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
+
+    transition:
+            background-color 0.2s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+
+.project-carousel-control:hover .project-carousel-button {
+    background-color: #0b5ed7;
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
+}
+
+/* Foco para navegación con teclado */
+
+.project-carousel-control:focus-visible .project-carousel-button {
+    outline: 3px solid var(--bs-emphasis-color);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+   ========================= */
+
+@media (max-width: 575.98px) {
+
+    .project-card {
+        max-width: 82%;
+    }
+
+    .project-image {
+        height: 170px;
+    }
+
+    .project-card .card-body {
+        padding: 1rem;
+    }
+
+    #carouselExampleDark .project-carousel-control {
+        width: 2.5rem;
+    }
+
+    #carouselExampleDark .carousel-control-prev {
+        left: 0;
+    }
+
+    #carouselExampleDark .carousel-control-next {
+        right: 0;
+    }
+
+    .project-carousel-button {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+}
+
+/* Respeta la preferencia de movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-carousel-button {
+        transition: none;
+    }
 }
