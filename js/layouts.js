@@ -1,8 +1,5 @@
-
-const BASE_PATH = "/PortfolioWeb/";
-
 async function loadLayout(elementId, file) {
-    const response = await fetch(`${BASE_PATH}${file}`);
+    const response = await fetch(`./${file}`);
 
     if (!response.ok) {
         throw new Error(`Error al cargar ${file}: ${response.status}`);
