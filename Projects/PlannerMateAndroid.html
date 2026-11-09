@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="../js/theme.js"></script>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+            rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <a class="navbar-brand" href="./index.html">
+                Toni Hernández
+            </a>
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir navegación">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projects.html">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button
+                                class="btn nav-link"
+                                id="themeToggle"
+                                type="button"
+                                aria-label="Activar tema oscuro"
+                                title="Cambiar tema">
+
+                            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+<main>
+
+<section class="container mt-4 mb-4 text-body desc-Justify">
+
+    <header>
+        <h1 class="title">PlannerMate</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <p>
+                PlannerMate versión Android, es un proyecto de comercio electrónico (e-commerce) desarrollado con <strong>Kotlin</strong> en <strong>Android Studio</strong>.
+                Se trata de una aplicación de solicitud de citas para, en este caso, un salón de peluquería. Todo desde tu dispositivo Android.
+            </p>
+
+            <p>
+                Los usuarios son registrados desde el comercio, y pueden acceder con su usuario y contraseña a la aplicación, donde podrán solicitar las citas por sí mismos, eligiendo
+                la hora, el día y el profesional disponibles.
+            </p>
+
+            <p>
+                La aplicación permite consultar las citas pendientes para ver la hora y el día. También dispone de un apartado de configuración donde pueden introducir datos de contacto o
+                cambiar la contraseña.
+            </p>
+
+            <p>
+                En conjunto con la aplicación de escritorio de PlannerMate para empleados, el flujo de trabajo es más sencillo y eficiente. Desde la versión de escritorio, los empleados pueden
+                revisar las citas, hacer cambios y contactar con el cliente en caso de necesitarlo.
+            </p>
+
+            <p>
+                El proyecto utiliza una base de datos relacional con <strong>MySQL</strong> para almacenar la información de las citas, los clientes, incluso de sus trabajadores. Ambas aplicaciones
+                acceden a la API REST para trabajar en conjunto.
+            </p>
+
+            <p>
+                PlannerMate Android ha sido desarrollada siguiendo las recomendaciones y buenas prácticas de desarrollo de Android.
+                Utiliza el patrón arquitectónico ViewModel y componentes de navegación para organizar la aplicación,
+                favoreciendo una estructura modular, escalable y mantenible.
+            </p>
+
+            <p>
+                <strong>Proyecto de desarrollo propio, diseñado e implementado íntegramente por mí, sin utilizar código generado por inteligencia artificial.</strong>
+            </p>
+        </section>
+
+
+        <section class="mb-5">
+            <h2 class="title mb-3">Tecnologías</h2>
+            <div>
+                <ul>
+                    <li>
+                        <strong>Kotlin:</strong> Lenguaje principal de la aplicación.
+                    </li>
+                    <li>
+                        <strong>Android Studio:</strong> IDE utilizado para el desarrollo.
+                    </li>
+                    <li>
+                        <strong>Retrofit:</strong> Cliente REST para el consumo de la API.
+                    </li>
+                    <li>
+                        <strong>Jetpack Compose:</strong> Toolkit declarativo para crear interfaces Android.
+                    </li>
+                    <li>
+                        <strong>Separar API REST y JPA:</strong> Persistencia y acceso a datos tanto para la aplicación de Android como para la de escritorio.
+                    </li>
+                    <li>
+                        <strong>MySQL:</strong> Base de datos.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <h3>Enlaces</h3>
+            <div>
+                <a href="https://github.com/">PROYECTO EN GITHUB</a>
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub"
+                   title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="container py-5">
+
+            <h4>Imagenes</h4>
+
+            <div id="portfolioCarousel" class="carousel slide">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Imagen 1">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="1"
+                            aria-label="Imagen 2">
+                    </button>
+
+
+                </div>
+
+                <!-- Imágenes -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/BookShop/bookshop1.png"
+                                 alt="Captura del proyecto 1">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/BookShop/bookshop4.png"
+                                 alt="Captura del proyecto 4">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Botón anterior -->
+                <button class="carousel-control-prev project-carousel-control"
+                        type="button"
+                        data-bs-target="#portfolioCarousel"
+                        data-bs-slide="prev"
+                        aria-label="Imagen anterior">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </span>
+
+                </button>
+
+                <!-- Botón siguiente -->
+                <button class="carousel-control-next project-carousel-control"
+                        type="button"
+                        data-bs-target="#portfolioCarousel"
+                        data-bs-slide="next"
+                        aria-label="Imagen siguiente">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+</section>
+
+</main>
+
+<footer id="footer">
+    <div id="contacto" class="footer border-top py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row
+                    justify-content-between align-items-center gap-3">
+
+                <!-- Copyright -->
+                <p class="text-body-secondary mb-0">
+                    &copy; 2026 Toni Hernández
+                </p>
+
+                <!-- Enlaces -->
+                <div class="footer-links d-flex align-items-center gap-4">
+
+                    <a href="https://www.linkedin.com/in/TU-USUARIO/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn"
+                       title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/ths-software"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub"
+                       title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
