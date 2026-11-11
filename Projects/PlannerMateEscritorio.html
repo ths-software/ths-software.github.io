@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="../js/theme.js"></script>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+            rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <a class="navbar-brand" href="../index.html">
+                Toni Hernández
+            </a>
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir navegación">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projects.html">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button
+                                class="btn nav-link"
+                                id="themeToggle"
+                                type="button"
+                                aria-label="Activar tema oscuro"
+                                title="Cambiar tema">
+
+                            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+<main>
+
+<section class="container mt-4 mb-4 text-body desc-Justify">
+
+    <header>
+        <h1 class="title">PlannerMate escritorio</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <p>
+                PlannerMate versión escritorio, es un proyecto de comercio electrónico (e-commerce) desarrollado con <strong>.NET</strong> en <strong>Visual Studio</strong>.
+                Se trata de una aplicación de gestión de citas, empleados y clientes, en este caso, un salón de peluquería. Todo para ser manejado desde el escritorio.
+            </p>
+
+            <p>
+                Los empleados podrán revisar las citas pendientes en un cómodo calendario, añadir nuevas, editarlas y eliminarlas.
+            </p>
+
+            <p>
+                También dispone de un listado de clientes con información de contacto. Los clientes pueden registrarse en el comercio, y el empleado introduce los datos directamente en la aplicación.
+            </p>
+
+            <p>
+                En conjunto con la aplicación de Android de PlannerMate para empleados, el flujo de trabajo es más sencillo y eficiente. Desde la versión de Android, los clientes pueden
+                agendar las citas con el profesional deseado, revisarlas y cancelarlas.
+            </p>
+
+            <p>
+                El proyecto utiliza una base de datos relacional con <strong>MySQL</strong> para almacenar la información de las citas, los clientes, incluso de sus trabajadores. Ambas aplicaciones
+                acceden a la API REST para trabajar en conjunto.
+            </p>
+
+            <p>
+                PlannerMate versión para empleados ha sido desarrollada siguiendo las recomendaciones y buenas prácticas de desarrollo, utilizando
+                el patrón arquitectónico ViewModel y favoreciendo una buena experiencia de usuario con una navegación ágil e intuitiva.
+                El código tiene una estructura modular, escalable y mantenible.
+            </p>
+
+            <p>
+                <strong>Proyecto de desarrollo propio, diseñado e implementado íntegramente por mí, sin utilizar código generado por inteligencia artificial.</strong>
+            </p>
+        </section>
+
+
+        <section class="mb-5">
+            <h2 class="title mb-3">Tecnologías</h2>
+            <div>
+                <ul>
+                    <li>
+                        <strong>C#:</strong> Lenguaje principal de la aplicación.
+                    </li>
+                    <li>
+                        <strong>Visual Studio:</strong> IDE utilizado para el desarrollo.
+                    </li>
+                    <li>
+                        <strong>RestSharp:</strong> Paquete REST para el consumo de la API.
+                    </li>
+                    <li>
+                        <strong>WPF:</strong> framework de .NET utilizado para desarrollar la interfaz gráfica de la aplicación de escritorio.
+                    </li>
+                    <li>
+                        <strong>API REST y JPA:</strong> Persistencia y acceso a datos tanto para la aplicación de Android como para la de escritorio.
+                    </li>
+                    <li>
+                        <strong>MySQL:</strong> Base de datos.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <h3>Enlaces</h3>
+            <div>
+                <a href="https://github.com/">PROYECTO EN GITHUB</a>
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub"
+                   title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="container py-5">
+
+            <h4>Imagenes</h4>
+
+            <div id="portfolioCarousel" class="carousel slide">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Imagen 1">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="1"
+                            aria-label="Imagen 2">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="2"
+                            aria-label="Imagen 3">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="3"
+                            aria-label="Imagen 4">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="4"
+                            aria-label="Imagen 5">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#portfolioCarousel"
+                            data-bs-slide-to="5"
+                            aria-label="Imagen 6">
+                    </button>
+
+
+                </div>
+
+                <!-- Imágenes -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/Android1/1.png"
+                                 alt="Captura del proyecto">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/Android1/2.png"
+                                 alt="Captura del proyecto">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/Android1/3.png"
+                                 alt="Captura del proyecto">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/Android1/4.png"
+                                 alt="Captura del proyecto">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+
+                            <img src="../img/Android1/5.png"
+                                 alt="Captura del proyecto">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-carousel-image">
+                            <img src="../img/Android1/6.png"
+                                 alt="Captura del proyecto">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Botón anterior -->
+                <button class="carousel-control-prev project-carousel-control"
+                        type="button"
+                        data-bs-target="#portfolioCarousel"
+                        data-bs-slide="prev"
+                        aria-label="Imagen anterior">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </span>
+
+                </button>
+
+                <!-- Botón siguiente -->
+                <button class="carousel-control-next project-carousel-control"
+                        type="button"
+                        data-bs-target="#portfolioCarousel"
+                        data-bs-slide="next"
+                        aria-label="Imagen siguiente">
+
+            <span class="project-carousel-button">
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+</section>
+
+</main>
+
+<footer id="footer">
+    <div id="contacto" class="footer border-top py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row
+                    justify-content-between align-items-center gap-3">
+
+                <!-- Copyright -->
+                <p class="text-body-secondary mb-0">
+                    &copy; 2026 Toni Hernández
+                </p>
+
+                <!-- Enlaces -->
+                <div class="footer-links d-flex align-items-center gap-4">
+
+                    <a href="https://www.linkedin.com/in/TU-USUARIO/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn"
+                       title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/ths-software"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub"
+                       title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
